@@ -2,7 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_input"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,17 +10,27 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="id.sch.smktelkom_mlg.learn.intent2.MainActivity">
+    tools:context="id.sch.smktelkom_mlg.learn.intent2.InputActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Biodata belum ada, isi terlebih dahulu"
-        android:id="@+id/textViewBiodata"/>
-
-    <Button
-        android:text="Isi Biodata"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonInput" />
+        android:inputType="textPersonName"
+        android:hint="Nama"
+        android:ems="10"
+        android:id="@+id/editTextNama" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="Tahun Kelahiran"
+        android:ems="10"
+        android:id="@+id/editTextThnLhr" />
+
+    <Button
+        android:text="Selesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonFinish" />
 </LinearLayout>
